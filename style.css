@@ -144,12 +144,23 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.2s ease;
 }
+
+.file-uploader .file-upload-box.active{
+    border: 2px solid #5145BA;
+    background: #F3F6FF;
+}
+
 
 .file-uploader .file-upload-box .box-title{
     font-size: 1rem;
     font-weight: 500;
     color: #626161;
+}
+
+.file-uploader .file-upload-box.active .box-title{
+    pointer-events: none;
 }
 
 .file-uploader .file-upload-box .box-title .file-browse-button{
