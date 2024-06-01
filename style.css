@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #5145BA;
+}
+
+.file-uploader{
+    width: 500px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.file-uploader .uploader-header{
+    display: flex;
+    padding: 20px;
+    background: #EEF1FB;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+}
+
+.uploader-header .uploader-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.uploader-header .file-completed-status{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.file-uploader .file-list{
+    list-style: none;
+    width: 100%;
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+    scrollbar-color: #999 transparent;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+.file-list .file-extension{
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: #5145BA;
+}
+
+.file-list .file-item{
+    display: flex;
+    gap: 14px;
+    margin-bottom: 23px;
+} 
+
+.file-list .file-item .file-content-wrapper{
+    flex: 1;
+}
+
+.file-list .file-item .file-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.file-list .file-item .file-name{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.file-list .file-item .file-info{
+    display: flex;
+    gap: 10px;
+}
+
+.file-list .file-item .file-info small{
+    color: #5c5c5c;
+    margin-top: 5px;
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.file-list .file-item .file-info .file-status{
+    color: #5145BA;
+}
+
+.file-list .file-item .cancel-button{
+    height: 30px;
+    width: 30px;
+    align-self: center;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    transition: 300ms;
+}
+
+.file-list .file-item .cancel-button:hover{
+    background-color: #EEF1FB;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.file-list .file-item .file-content-wrapper .file-progress-bar{
+    width: 100%;
+    height: 3px;
+    border-radius: 30px;
+    margin-top: 10px;
+    background: #d9d9d9;
+}
+
+.file-list .file-item .file-content-wrapper .file-progress-bar .file-progress{
+    width: 50%;
+    height: inherit;
+    border-radius: inherit;
+    background: #5145BA;
+}
+
+.file-uploader .file-upload-box{
+    margin: 10px 20px 20px;
+    border-radius: 5px;
+    border: 2px dashed #B1ADD4;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-uploader .file-upload-box .box-title{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #626161;
+}
+
+.file-uploader .file-upload-box .box-title .file-browse-button{
+    color: #5145BA;
+    cursor: pointer;
+}
+
+.file-uploader .file-upload-box .box-title .file-browse-button:hover{
+    text-decoration: underline;
+}
