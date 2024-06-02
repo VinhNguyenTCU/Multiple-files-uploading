@@ -45,12 +45,16 @@ body{
 .file-uploader .file-list{
     list-style: none;
     width: 100%;
-    padding: 20px;
+    padding-bottom: 10px;
     max-height: 400px;
     overflow-y: auto;
     scrollbar-color: #999 transparent;
     scrollbar-width: thin;
     scroll-behavior: smooth;
+}
+
+.file-uploader .file-list:has(li){
+    padding: 20px;
 }
 
 .file-list .file-extension{
@@ -116,8 +120,8 @@ body{
 
 .file-list .file-item .cancel-button:hover{
     background-color: #EEF1FB;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
 }
 
@@ -130,7 +134,7 @@ body{
 }
 
 .file-list .file-item .file-content-wrapper .file-progress-bar .file-progress{
-    width: 50%;
+    width: 0%;
     height: inherit;
     border-radius: inherit;
     background: #5145BA;
